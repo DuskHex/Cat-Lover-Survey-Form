@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6BA368;
+    background-image: url("https://i.imgur.com/lZMLsmk.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(100, 170, 100, 0.85); 
+    border: 3px solid #316D31; 
+    color: #F5E6C8; 
+    box-shadow: 0px 8px 22px rgba(49, 109, 49, 0.6); 
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color:  #FAF3DD;
+}
+
+p {
+    font-size: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #54864B;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #316D31;
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #2F4C2A;
+    border-color: #2F4C2A;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #316D31;
+    color: #FAF3DD;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #2F4C2A;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
